@@ -22,7 +22,7 @@ def balance_check(driver,wait, username,password):
         wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "amount")))
         balance = driver.find_element(By.CLASS_NAME, "amount")
         logger.info('残高：' + balance.text)#1,889,243円
-        return balance
+        return balance.text
     except Exception as e:
         logger.error  ("Balance check failed")
         logger.error ('=== Error Content ===')
