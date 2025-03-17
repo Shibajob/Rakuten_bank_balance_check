@@ -50,13 +50,12 @@ options.add_argument("--disable-popup-blocking")
 ###############################
 # Termination process
 ###############################
-def Process_Exit(flag, balance = ''):
+def Process_Exit(flag):
     # User profile folder deletion process
     userprofilefolder.userprofilefolder_remove(USER_PROFILE_PATH)
 
     if(flag == 'true'):
         logger.info ('successful termination')
-        return balance
     else:
         logger.error ('abnormal termination')
         raise('abnormal termination')
@@ -97,7 +96,8 @@ def Rakuten_bank_balance_check(username, passwd, branch_number, account_number, 
     try:
         balance = balance_check.balance_check(driver, wait, username, passwd)
         driver.quit()
-        Process_Exit('true', balance)
+        Process_Exit('true')
+        return balance
     except Exception:
         driver.quit()
         Process_Exit('fail')
