@@ -1,0 +1,12 @@
+2025-03-17 20:37:24,570 - INFO - ===Start===
+2025-03-17 20:37:24,570 - INFO - User profile created.
+2025-03-17 20:37:24,570 - INFO - ====== WebDriver manager ======
+2025-03-17 20:37:25,888 - INFO - Get LATEST chromedriver version for google-chrome
+2025-03-17 20:37:25,935 - INFO - Get LATEST chromedriver version for google-chrome
+2025-03-17 20:37:25,982 - INFO - Driver [C:\Users\Atsushi\.wdm\drivers\chromedriver\win64\134.0.6998.88\chromedriver-win32/chromedriver.exe] found in cache
+2025-03-17 20:37:28,642 - INFO - Chrome Start
+2025-03-17 20:37:28,642 - INFO - Enter your login information.
+2025-03-17 20:37:29,659 - INFO - Clicked on the login button.
+2025-03-17 20:37:35,091 - INFO - No additional password was asked.
+2025-03-17 20:37:35,255 - INFO - Login completed.
+2025-03-17 20:37:35,325 - INFO - écçÇÅF2,283

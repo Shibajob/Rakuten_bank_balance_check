@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling >= 1.11.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "Rakuten_bank_balance_check"
+version = "0.1.0"
+description = "Check your Rakuten Bank balance"
+readme = "README.md"
+authors = [
+  {name = "shibajob", email = "shibainu.job@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+license = {file = "LICENSE"}
+requires-python = ">=3.11.0"
+dependencies = [
+  "selenium[chrome] == 4.5.0",
+  "webdriver-manager == 4.0.2",
+]
+
+[project.urls]
+repository = "https://github.com/Shibajob/Rakuten_bank_balance_check"
+homepage = "https://github.com/Shibajob/Rakuten_bank_balance_check"
+
+[tool.hatch.build.targets.wheel]
+packages = ["Rakuten_bank_balance_check"]
