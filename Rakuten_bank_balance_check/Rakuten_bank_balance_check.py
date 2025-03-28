@@ -63,7 +63,7 @@ def Process_Exit(flag):
 ###############################
 # Main
 ###############################
-def Rakuten_bank_balance_check(username, passwd, branch_number, account_number, secret_word_list):
+def Rakuten_bank_balance_check(username, passwd, branch_number='default', account_number='default', secret_word_list='defult'):
     logger.info ('===Start===')
     # If the username or password value is invalid, the process will terminate.
     if username is None or passwd is None or str(username).strip() == "" or str(passwd).strip() == "":
